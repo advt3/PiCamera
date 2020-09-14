@@ -10,7 +10,7 @@ int main() {
   cap.read(frame);
   if(!frame.empty()){
     cv::flip(frame,flipped, -1);
-    cv::imwrite("/tmp/frame2.jpg",flipped);
+    cv::imwrite("/tmp/frame3.jpg",flipped);
   }else{
     std::cout << "No frame read" << std::endl;
   }
